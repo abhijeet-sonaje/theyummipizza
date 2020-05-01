@@ -11,14 +11,12 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/main.css') }}" rel="stylesheet">
-        <!-- <style>
-            
+        <!-- Styles -->
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-            
-        </style> -->
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -32,15 +30,11 @@
                     @endauth
                 </div>
             @endif
-
             <div class="content">
-                <img src="/img/pizza-name.jpg" alt="Pizza Name Image">
-                <div class="title blue m-b-md">
-                    The Yummi Pizza
-                </div>
-
-            
+                <div id="react-app"></div>
             </div>
         </div>
+
+        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
