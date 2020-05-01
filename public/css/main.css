@@ -24,6 +24,10 @@ body {
   position: relative;
 }
 
+.welcome-div {
+  margin-top: 20%;
+}
+
 .top-right {
   position: absolute;
   right: 10px;
@@ -34,7 +38,7 @@ body {
   text-align: center;
 }
 
-.content img {
+.content .main-image {
   width: 400px;
   border-radius: 2%;
 }
@@ -55,5 +59,42 @@ body {
   border-bottom: 2px solid;
   padding: 12px 0;
   color: #0066cc;
+}
+
+.menu-container {
+  padding: 2%;
+  padding-top: 50px;
+}
+
+.menu-container .card {
+  margin-bottom: 5%;
+}
+
+.menu-item img {
+  width: 100%;
+}
+
+.menu-item .pizza-type {
+  font-weight: bold;
+  color: black;
+}
+
+.cart {
+  position: fixed !important;
+  width: auto !important;
+}
+
+.cart-items {
+  max-height: 60vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.chekout-container {
+  padding-top: 50px;
+}
+
+.checkout-img {
+  width: 100%;
 }
 
